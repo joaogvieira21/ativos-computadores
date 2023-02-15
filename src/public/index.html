@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>TESTE</title>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>Ativos Computadores</h1>
+        </header>
+        <main id="pcss">
+            
+        </main>
+        <div class="btn-add" onclick="openModal()">
+           <span>+</span>  
+        </div>
+        <div class="modal-container">
+            <div class="modal">   
+                <div>
+                    <label for="type">Tipo:</label>
+                    <select id="type" name="type">
+                        <option value="notebook">Notebook</option>
+                        <option value="desktop" selected>Desktop</option>
+                        option>
+                    </select>
+                </div>
+                <div>
+                    <label for="proc">Processador:</label>
+                    <select id="processador" name="proc">
+                        <option value="i7">i7</option>
+                        <option value="i5">i5</option>
+                        <option value="i3" selected>i3</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="memoria">Memória:</label>
+                    <select id="memoria" name="memoria">
+                        <option value="32gb">32gb</option>
+                        <option value="16gb">16gb</option>
+                        <option value="8gb" selected>8gb</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="disco">Disco:</label>
+                    <select id="disco" name="disco">
+                        <option value="1TB">1TB</option>
+                        <option value="500GB">500GB</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="pv">Placa de Vídeo:</label>
+                    <select id="pv" name="pv">
+                        <option value="rx">RX 580 8GB</option>
+                        <option value="fx">FX 5200 A MAIS BRABA</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="setor">Setor:</label>
+                    <select id="setor" name="setor">
+                        <option value="financeiro">Financeiro</option>
+                        <option value="Marketing">Marketing</option>
+                    </select>
+                </div>
+                <input id="patrimonio" type="text" placeholder="ex: PC-0058">
+                
+                <button onclick="createItem()">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./assets/script/script.js"></script>
+</body>
+</html>
